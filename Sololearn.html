@@ -17,5 +17,21 @@
     >
       Right
     </button>
+
+    <h3 id="h1">Original Header</h3>
+    <p id="p1">Original Paragraph</p>
+
+    <script>
+      document.getElementById("h1").textContent = "Updated Header";
+      document.getElementById("p1").textContent = "Updated paragraph";
+    </script>
+
+    <p id="p1">This is a paragraph that will be styled.</p>
+
+    <script>
+      let p = document.getElementById("p1");
+      p.style.color = "blue";
+      p.style.border = "solid";
+    </script>
   </body>
 </html>
